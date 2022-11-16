@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor-logo {
+    text-align: center;
+}
+
+.contenedor-logo img{
+    width: 30vh;
+}
+
+header{
+    background-color: rgb(255, 2, 234);
+}
+.menu-navegacion{
+    width: 100vw;
+    display: inline-block;
+}
+
+.lista-desordenada {
+    list-style: none;
+    text-align: center;
+    
+}
+
+.lista-desordenada li:nth-child(odd) {
+    background-color: rgb(161, 15, 161);
+    padding: 0.5em;
+}
+
+.lista-desordenada li:nth-child(even) {
+    background-color: rgb(221, 32, 221);
+    padding: 0.5em;
+}
+
+.lista-desordenada a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+
+/* .lista-desordenada a:visited {
+    color: rgb(175, 1, 255);
+} */
+
+.contenedor {
+    background-color: rgb(232, 180, 245);
+    height: 90vh;
+}
+
+.contenedor h1 {
+    color: darkslateblue;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 2px solid rgb(255, 0, 242);
+}
+
+.contenedor p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contenedor_imagen{
+    text-align: center;
+}
+
+.contenedor_imagen img{
+    width: 90vw;
+    height: 40vh;
+}
+
+.super-chicas{
+    background-color: rgb(236, 209, 255);
+    padding: 1.5rem;
+}
+
+h3 {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+h4 {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(236, 209, 255);
+}
+
+.figura {
+    text-align: center;
+}
+
+.figura img{
+    height: 50vh;
+}
+
+h5 {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid rgb(119, 0, 255);
+}
+
+.superpoderes {
+    list-style: number;
+    padding: 1.5rem;
+}
+
+.superpoderes li {
+    padding: 0.2em;
+}
+
+@media (min-width: 768px) {
+    header{
+        background-color: rgb(255, 2, 234);
+        height: 40vh;
+    }
+    .contenedor {
+        background-color: rgb(249, 223, 255);
+        height: 80vh;
+    }
+    .contenedor-logo{       
+        vertical-align: middle;
+        padding: 2em;
+        text-align: center;
+    }
+    .contenedor-logo img{
+        width: 20vw;
+    }
+    .menu-navegacion{
+        display: inline-block;
+    }
+    
+    .lista-desordenada{
+        list-style: none;
+        text-align: center;
+    }
+    
+    .lista-desordenada li{
+        display: inline-block;
+        padding: 0.5rem;
+    }
+    
+    .lista-desordenada a{
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color:rgb(255, 254, 185);
+    }
+
+    .lista-desordenada li:nth-child(odd) {
+        background-color: rgb(255, 2, 234);
+    }
+    
+    .lista-desordenada li:nth-child(even) {
+        background-color: rgb(255, 2, 234);
+    }
+
+    .contenedor_imagen{
+        background-image: url('../img/pop_art_escritorio.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .contenedor_imagen img{
+        visibility: hidden;
+    }
+}
+    

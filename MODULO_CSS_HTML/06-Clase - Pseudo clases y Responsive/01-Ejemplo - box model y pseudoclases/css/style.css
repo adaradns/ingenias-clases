@@ -1,0 +1,161 @@
+/*Hoja de estilos con propiedades de box model y pseudoclases*/
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* BOX MODEL */
+header {
+    background-color: rgb(255, 0, 191);
+}
+
+.logo{
+    width: 15%;
+    vertical-align: middle;
+    padding: 1em;
+}
+
+.menu-navegacion{
+    width: 80vw;
+    display: inline-block;
+}
+
+.lista-desordenada{
+    list-style: none;
+    text-align: right;
+}
+
+.lista-desordenada li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.lista-desordenada a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color:rgb(255, 254, 185);
+}
+
+.contenedor {
+    background-color: rgb(255, 209, 237);
+    padding: 2rem;
+    height: 80vh;
+}
+
+.contenedor h1 {
+    color: rgb(80, 80, 80);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: solid 2px rgb(220, 20, 210);    
+}
+
+.contenedor p {
+    font-size: 1.5em;
+    padding: 5%;
+    text-align: center;
+}
+
+.contenedor_imagen {
+    text-align: center;
+}
+
+.contenedor_imagen img {
+    height: 30vh;
+    width: 50vh;
+}
+
+/* PSEUDO-CLASES */
+.seccion-practica{
+    height: 80vh;
+    padding: 1.5em;
+}
+
+/* cuando pasamos el mouse por encima del elemento */
+.lista-desordenada a:hover {
+    background-color: rgb(255, 187, 240);
+    text-decoration: underline;
+    padding: 1.5em;
+}
+
+/* Elemento no visitado */
+.lista-desordenada a:link {
+    color:rgb(255, 245, 245);
+    text-decoration: none;
+}
+
+/* Enlace visitado */
+.lista-desordenada a:visited {
+    color:blueviolet;
+}
+
+
+/* Cuando mantengo el click en un elemento */
+.lista-desordenada a:active {
+    color: rgb(255, 156, 7);
+    font-size: 1.5em;
+}
+
+#abuelo {
+    padding: 1.5em;
+}
+
+/*Cambia el padding left y right de todos los 
+divs que no contengan la clase padre*/
+div:not(.padre){
+    padding-left:40px;
+    padding-right:40px;
+}
+
+/* Cambia el color de la fuente a azul cuando dentro del div con clase
+hijo no sean parrafos, elemento p. */
+div  .hijo :not(p){
+    color:blue;
+}
+
+.lista ul li {
+    list-style: none;
+    border: 1px solid rgb(250, 194, 255);
+    padding: 1.5em;    
+}
+
+/* Cambia el color de fondo de los elementos de la lista impares */
+.lista ul li:nth-child(odd) {
+    background-color: rgb(255, 13, 134);
+}
+
+/* Cambia el color de fondo de los elementos de la lista pares */
+.lista ul li:nth-child(even) {
+    background-color: rgb(255, 182, 222);
+}
+
+/*Pie de pagina*/
+footer h3 {
+    text-align: center;
+    padding: 1.5em;
+    background-color: rgb(255, 4, 213);
+}
+
+footer ul li {
+    list-style: none;
+    text-align: center;
+    padding: 1.5em;
+    background-color: rgb(255, 212, 236);
+}
+
+footer ul li a {
+    text-decoration: none;
+    color:rgb(255, 13, 134);
+    font-weight: bolder;
+}
+
+footer ul li a:hover {
+    background-color: beige;
+    padding: 1.5em;
+}

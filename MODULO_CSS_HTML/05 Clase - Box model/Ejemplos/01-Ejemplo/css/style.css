@@ -1,0 +1,27 @@
+
+.contenedor {
+    background-color: cornflowerblue;
+    /* border-top: solid 5px crimson;
+    border-right: solid 5px crimson;
+    border-bottom: solid 5px crimson;
+    border-left: solid 5px crimson; */
+    border: solid 5px crimson;
+    padding: 5%;
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px; */
+    margin: 20px 20px 20px 30px;
+    width: 200px;
+    /* height: 100vh; */
+}
+
+.subtitulo {
+    background-color: cadetblue;
+    color:antiquewhite;
+    border: solid 3px coral;
+    padding: 5%;
+    margin: 20px 20px 20px 30px;
+    width: 500px;
+    /* height: 100vh; */
+}
