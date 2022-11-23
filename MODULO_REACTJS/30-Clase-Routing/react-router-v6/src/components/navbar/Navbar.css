@@ -1,0 +1,31 @@
+nav.navbar{
+    background-color: bisque;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+        
+}
+
+nav.navbar ul li {
+    list-style: none;
+    padding: 1.5em;    
+}
+
+nav.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #454343;
+    font-weight: bold;
+}
+
+nav.navbar ul li a:hover{
+    color: #DE744C;
+}
